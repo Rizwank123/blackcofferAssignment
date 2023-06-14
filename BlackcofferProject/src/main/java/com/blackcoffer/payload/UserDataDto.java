@@ -1,6 +1,8 @@
 package com.blackcoffer.payload;
 
-import java.time.LocalDateTime;
+
+
+import java.sql.Timestamp;
 import java.time.Year;
 
 import lombok.AllArgsConstructor;
@@ -16,9 +18,9 @@ import lombok.Setter;
 
 public class UserDataDto {
 	private long id;
-	private Year end_year;
-	private double citylng;
-	private double citylat;
+	private Integer end_year;
+	private String citylng;
+	private String citylat;
 	private Integer intensity;
 	private String sector;
 	private String topic;
@@ -26,10 +28,10 @@ public class UserDataDto {
 	private String swot;
 	private String url;
 	private String region;
-	private Year start_year;
+	private Integer start_year;
 	private Integer impact;
-	private LocalDateTime added;
-	private LocalDateTime published;
+	private String added;
+	private String published;
 	private String city;
 	private String country;
 	private Integer relevance;

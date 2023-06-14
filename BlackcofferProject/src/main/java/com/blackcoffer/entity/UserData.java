@@ -1,5 +1,6 @@
 package com.blackcoffer.entity;
 
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.time.Year;
 
@@ -26,9 +27,9 @@ public class UserData {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	private Year end_year;
-	private double citylng;
-	private double citylat;
+	private Integer end_year;
+	private String citylng;
+	private String citylat;
 	private Integer intensity;
 	private String sector;
 	private String topic;
@@ -36,14 +37,14 @@ public class UserData {
 	private String swot;
 	private String url;
 	private String region;
-	private Year start_year;
+	private Integer start_year;
 	private Integer impact;
-	private LocalDateTime added;
-	private LocalDateTime published;
+	private String added;
+	private String published;
 	private String city;
 	private String country;
 	private Integer relevance;
-	private String  pestle;
+	private String pestle;
 	private String source;
 	private String title;
 	private Integer likelihood;

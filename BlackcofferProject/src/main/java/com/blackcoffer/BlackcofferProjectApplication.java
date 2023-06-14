@@ -13,8 +13,7 @@ public class BlackcofferProjectApplication {
 	}
 	
 	@Bean
-	public static ModelMapper modelMapper() {
-		
+	public ModelMapper modelMapper() {
 		return new ModelMapper();
 	}
 
